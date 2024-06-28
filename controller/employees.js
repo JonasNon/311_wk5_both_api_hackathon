@@ -1,5 +1,5 @@
 const mysql = require('mysql')
-const pool = require('../sql/connection') //update this folder location when its made
+const pool = require('../mysql/connection') //update this folder location when its made
 
 
 

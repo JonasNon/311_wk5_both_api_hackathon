@@ -1,14 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+
 const pool = require('./mysql/connection')
 
-// const usersRouter = require('./routers/users');
+const employeesRouter = require('./routes/employees')
+
 
 const app = express();
 const port = process.env.PORT || 4001;
 
 app.use(bodyParser.json())
-// app.use('/users', usersRouter)
+app.use('/employees', employeesRouter)
 
 app.get('/', (req, res) => {
   res.send('Welcome to our server!')

@@ -5,5 +5,7 @@ const employeesController = require('../controller/employees')
 router.get('/', employeesController.getEmployees)
 router.get('/:id', employeesController.getEmployeeById)
 
+router.get('/:id', employeesController.getEmployeeById2)
+
 
 module.exports = router;

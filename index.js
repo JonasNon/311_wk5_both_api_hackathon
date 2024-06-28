@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const pool = require('./mysql/connection')
+
 // const usersRouter = require('./routers/users');
 
 const app = express();

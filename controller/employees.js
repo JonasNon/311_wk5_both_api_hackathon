@@ -5,7 +5,7 @@ const pool = require('../mysql/connection') //update this folder location when i
 
 const getEmployees = (req, res) => {
   pool.query("SELECT * FROM employees LIMIT 50", (err, rows) => {
-    if (err) return handleSQLError(res, err)
+    // if (err) return handleSQLError(res, err)
     return res.json(rows);
   })
 }
@@ -16,7 +16,7 @@ const getEmployeeById = (req, res) => {
   sql = mysql.format(sql, [id])
 
   pool.query(sql, (err, rows) => {
-    if (err) return handleSQLError(res, err)
+    // if (err) return handleSQLError(res, err)
     return res.json(rows);
   })
 }

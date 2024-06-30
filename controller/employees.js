@@ -21,6 +21,12 @@ const getEmployeeById = (req, res) => {
   })
 }
 
+const getEmployeeById2 = (req, res) => { 
+  res.send("getting employees")
+}
 
 
-module.exports = { getEmployees, getEmployeeById }
+
+
+
+module.exports = { getEmployees, getEmployeeById, getEmployeeById2 }
